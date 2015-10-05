@@ -1,6 +1,7 @@
 <%
-  @title  = "Apply"
-  @header = "Apply for a DocumentCloud account"
+  @title              = "Apply"
+  @header             = "Apply for a DocumentCloud account"
+  @javascripts_header = 'https://www.google.com/recaptcha/api.js'
 %>
 
 <div id="return_to_v1">
@@ -158,6 +159,10 @@
         Email me updates about new DocumentCloud features and services
       </label>
     </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="g-recaptcha" data-sitekey="6LfNKw4TAAAAAJ06Es2avxM27WDXQqjqamOD5SFS"></div>
   </fieldset>
 
   <div class="submitwrap">

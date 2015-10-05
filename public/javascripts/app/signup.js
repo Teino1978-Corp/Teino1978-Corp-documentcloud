@@ -78,7 +78,7 @@ SignupFormView = dc.ui.FormView.extend({
   },
   
   render: function(){},
-  
+
   submit: function(event){
     event.preventDefault();
 
@@ -86,6 +86,13 @@ SignupFormView = dc.ui.FormView.extend({
     this.model.maybeSelfApprove();
 
     this.disableForm();
+
+    if (!this.verifyHuman()) {
+      this.alert("<b>Hmm</b>, our computers think you're a robot. Try again?", { type: 'error' });
+      this.enableForm();
+      return;
+    }
+
     var saveForm = this.model.save({}, {
       success: this.saveSuccess,
       error:   this.saveError,
@@ -109,6 +116,11 @@ SignupFormView = dc.ui.FormView.extend({
     this.enableForm();
     this.alert('<b>Clonk</b>, that didn’t work. Check everything and try again?', { type: 'error' });
     this.$currentAlert.scrollTo();
+  },
+
+  // TODO: Make real
+  verifyHuman: function() {
+    return true;
   },
 
   checkIsInMarket: function(event) {

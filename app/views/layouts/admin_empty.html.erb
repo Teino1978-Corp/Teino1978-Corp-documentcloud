@@ -8,6 +8,8 @@
     <%= include_stylesheets :ie_only, :embed_assets => false %>
   <![endif]-->
   <%= include_javascripts :core, :admin_v2 %>
+  <% javascripts_header = (@javascripts_header || []) %>
+  <%= javascript_include_tag *javascripts_header %>
   <%= csrf_meta_tag %> 
 </head>
 <body class="v2">
