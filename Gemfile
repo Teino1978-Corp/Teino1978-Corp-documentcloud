@@ -27,7 +27,7 @@ gem 'rdiscount',              '~> 2.1.6'
 gem 'rake'
 gem 'actionpack-page_caching'
 gem 'jammit',                 '~> 0.7.0'
-gem 'nokogiri',               '~> 1.6.0'
+gem 'nokogiri',               '~> 1.13.6'
 gem 'net-ssh-shell'
 gem 'country_select',         '~> 2.2.0'
 
