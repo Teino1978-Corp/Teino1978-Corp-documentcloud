@@ -18,7 +18,7 @@ gem 'cloud-crowd',            '~>0.7.6'
 gem 'pdftailor'
 gem 'pdfshaver',              '>=0.0.2'
 
-gem 'omniauth',               '~> 1.2.1'
+gem 'omniauth',               '~> 1.9.2'
 gem 'omniauth-twitter',       '~> 1.0'
 gem 'omniauth-facebook',      '~> 1.6'
 gem 'omniauth-google-oauth2', '~> 0.2'
